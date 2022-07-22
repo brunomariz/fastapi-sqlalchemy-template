@@ -1,4 +1,4 @@
-from app.services._base import BaseService
+from app.api.v1.services._base import BaseService
 
 
 class ExampleService(BaseService):

@@ -1,5 +1,5 @@
-from app.controllers._base import BaseController
-from app.services.example_service import ExampleService
+from app.api.v1.controllers._base import BaseController
+from app.api.v1.services.example_service import ExampleService
 
 
 class ExampleController(BaseController):

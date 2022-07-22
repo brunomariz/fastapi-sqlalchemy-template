@@ -7,3 +7,13 @@ services:
       - "8080:80"
     volumes:
       - .:/code
+
+  db:
+    container_name: "${COMPOSE_DB_CONTAINER}"
+    image: postgres
+    ports:
+      - "5543:5432"
+    environment:
+      POSTGRES_PASSWORD: secret123
+      POSTGRES_DB: postgres_fastapi_template
+      POSTGRES_USER: user

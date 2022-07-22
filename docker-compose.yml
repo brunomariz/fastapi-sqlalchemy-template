@@ -1,6 +1,7 @@
 services:
   web:
     container_name: "${COMPOSE_WEB_CONTAINER}"
+    image: "${COMPOSE_WEB_IMAGE}"
     build: .
     ports:
       - "8080:80"

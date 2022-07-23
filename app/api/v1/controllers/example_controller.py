@@ -8,3 +8,6 @@ class ExampleController(BaseController):
 
     def example_additional_method(self):
         return self.service.example_additional_method()
+
+    def example_index(self):
+        return self.service.index()
